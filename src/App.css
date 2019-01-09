@@ -81,6 +81,12 @@ p {
   font-size: 16px;
 }
 
+.start-button {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
 
 @media only screen and (max-width: 767px) {
   .drawer {
@@ -147,10 +153,7 @@ p {
   }
 
   .start-button {
-    position: absolute;
     bottom: 100px;
-    width: 100%;
-    text-align: center;
   }
 }
 
@@ -211,5 +214,9 @@ p {
 
   .pill-button {
     font-size: 1em
+  }
+
+  .start-button {
+    bottom: 80px;
   }
 }
