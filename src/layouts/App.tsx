@@ -17,56 +17,55 @@ export const SmallScreen: React.FunctionComponent = props => <Responsive {...pro
 //   isNavHideAble: boolean
 // }
 
-// class App extends Component<{}, State> {
-//   state: State = {
-//     isNavHideAble: false
-//   }
+class App extends Component {
 
-//   setNavHidable = (isIntroVisible: boolean) => {
-//     this.setState({
-//       isNavHideAble: !isIntroVisible
-//     })
-//   }
+  resize = () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
 
-//   public render() {
-//     const nav = this.state.isNavHideAble ? 
-//     <Headroom>
-//       <Navbar className={"navbar"}/>
-//     </Headroom> : 
-//     <Navbar
-//       style={{position: "fixed", top: 0, zIndex: 1}}
-//      className={"navbar"}/>
-//     return (
-//       <div className="App">
-//         {nav}
-//         <VisibilitySensor
-//           partialVisibility={true}
-//           onChange={this.setNavHidable}
-//         >
-//           <Intro className={"intro"} style={{height: "100vh"}}/>
-//         </VisibilitySensor>
-//         <Education className={"edu"}/>
-//         <Experience className={"exp"}/>
-//       </div>
-//     )
-//   }
-// }
+  componentDidMount () {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    window.addEventListener('resize', this.resize)
+  }
 
-const App: React.FunctionComponent = () => {
-  return (
-    <div className="App">
+  componentWillUnmount () {
+    window.removeEventListener('resize', this.resize)
+  }
+
+  public render() {
+    return (
+      <div className="App">
       <Headroom upTolerance={1}>
         <Navbar/>
       </Headroom>
       <Drawer/>
-      <Intro id={"intro"} className={"intro section"} style={{height: "100vh"}}/>
+      <Intro id={"intro"} className={"intro section"}/>
       <Education style={{paddingTop:"10px"}} id={"edu"} className={"edu section"}/>
       <Experience style={{paddingTop:"10px"}} id={"exp"} className={"exp section"}/>
       <Skills id={"skills"} className={"skills section"} style={{paddingTop:"10px"}}/>
       <Projects id={"projects"} className={"projects section"} style={{paddingLeft: "5vw", paddingTop:"10px"}}/>
     </div>
-  )
+    )
+  }
 }
+
+// const App: React.FunctionComponent = () => {
+//   return (
+//     <div className="App">
+//       <Headroom upTolerance={1}>
+//         <Navbar/>
+//       </Headroom>
+//       <Drawer/>
+//       <Intro id={"intro"} className={"intro section"} style={{height: "100vh"}}/>
+//       <Education style={{paddingTop:"10px"}} id={"edu"} className={"edu section"}/>
+//       <Experience style={{paddingTop:"10px"}} id={"exp"} className={"exp section"}/>
+//       <Skills id={"skills"} className={"skills section"} style={{paddingTop:"10px"}}/>
+//       <Projects id={"projects"} className={"projects section"} style={{paddingLeft: "5vw", paddingTop:"10px"}}/>
+//     </div>
+//   )
+// }
 
 export interface Props {
   style?: CSSProperties

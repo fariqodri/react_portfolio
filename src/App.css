@@ -23,6 +23,8 @@
 .intro {
   display: flex;
   align-items:center;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 a {
@@ -83,8 +85,9 @@ p {
 
 .start-button {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   text-align: center;
+  bottom: 10vh;
 }
 
 
@@ -152,9 +155,6 @@ p {
     padding-right: 5vw;
   }
 
-  .start-button {
-    bottom: 120px;
-  }
 }
 
 
@@ -214,9 +214,5 @@ p {
 
   .pill-button {
     font-size: 1em
-  }
-
-  .start-button {
-    bottom: 80px;
   }
 }
