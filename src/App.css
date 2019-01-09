@@ -145,6 +145,13 @@ p {
   .edu, .exp {
     padding-right: 5vw;
   }
+
+  .start-button {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 

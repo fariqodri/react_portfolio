@@ -48,7 +48,7 @@ const Intro: React.FunctionComponent<PropsFromDispatch & Props> = props => (
         </List>
       </div>
     </Description>
-    <div style={{position: "absolute", bottom: 80, width: "100vw", textAlign: "center"}}>
+    <div className={"start-button"}>
       <div style={{marginBottom: "7px"}}>and this is all about me</div>
       <AnchorLink href={"#edu"}><i style={{fontSize: "2em"}} className="fas fa-arrow-down"></i></AnchorLink>
     </div>
