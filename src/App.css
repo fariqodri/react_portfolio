@@ -1,32 +1,208 @@
+.textLoop-enter {
+  opacity: 0;
+}
+
+.textLoop-enter.textLoop-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.textLoop-leave {
+  opacity: 0;
+}
+
+.textLoop-leave.textLoop-leave-active {
+  opacity: 0;
+}
+
 .App {
-  text-align: center;
+  transition: all 1s ease;
+  font-family: 'Lato', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.intro {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items:center;
+}
+
+a {
+  color: black
+}
+
+.list-container {
+  display: flex
+}
+
+.navbar {
+  padding-left: 5vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color: white
+}
+
+.headroom--unfixed {
+  position: absolute !important;
+}
+
+.slick-prev:before, .slick-next:before { 
+  color:red !important;
+}
+
+.pill-button:hover {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.skill-card {
+  background-color: white;
+  margin-right: 5px;
+  word-wrap: break-word;
+  border: 1px solid #4C516D;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.child {
+  z-index: 1;
+  position: absolute;
+  bottom:30%;
+  margin-left: 4%;
+  font-size: 1.15em
+}
+
+img.mockup {
+  width: 100%;
+}
+
+.headroom--pinned, .headroom--unfixed {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+p {
+  font-size: 16px;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .drawer {
+    background-color: #89CFF0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar {
+    padding-right: 5vw
+  }
+
+  .welcome > h3 {
+    font-size: 16pt
+  }
+
+  .welcome > h4 {
+    font-size: 14pt
+  }
+
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .conList > li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .list-container {
+    justify-content: center;
+    margin-top: 0.8rem
+  }
+
+  .title {
+    font-size: 1.5rem
+  }
+  .name {
+    font-size: 1.7rem
+  }
+  .fab {
+    font-size: 1.2rem
+  }
+
+  .skill-card {
+    height: 26vh;
+    width: 25vw;
+  }
+  .pill-button {
+    padding: 5px !important;
+    font-size: 0.8em
+  }
+
+  .proj-desc {
+    margin-top: 8px;
+  }
+
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .edu, .exp {
+    padding-right: 5vw;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .App {
+    padding-right: 5vw;
+  }
+
+  .conList > li {
+    margin-bottom: 1rem;
+  }
+
+  .section {
+    margin-bottom: 70px;
+  }
+
+  .skill-card {
+    height: 20vh;
+    width: 20vw;
+    transition: all 300ms ease-in
+  }
+
+  .skill-card:hover {
+    height: 25vh;
+    width: 22vw;
+    font-size: 1.35em
+  }
+
+  .list-container {
+    justify-content: flex-end;
+  }
+  
+  .title {
+    font-size: 1.7rem
+  }
+
+  .name {
+    font-size: 1.9rem
+  }
+
+  .fab {
+    font-size: 2rem
+  }
+
+  .navbar > .menu {
+    justify-content: space-evenly
+  }
+
+  .welcome {
+    width: 100%;
+  }
+
+  .slick-list {
+    padding: 100px 0 !important;
+    margin: -100px 0 !important;
+  }
+
+  .pill-button {
+    font-size: 1em
   }
 }
