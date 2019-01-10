@@ -20,13 +20,13 @@ class Drawer extends Component<Props & ReduxProps> {
   doToDrawer = (isExpand: boolean) => () => this.props.setDrawer(isExpand);
   closeDrawer: () => void = this.doToDrawer(false);
 
-  componentDidMount () {
-    window.addEventListener("resize", this.closeDrawer)
-  }
+  // componentDidMount () {
+  //   window.addEventListener("resize", this.closeDrawer)
+  // }
 
-  componentWillUnmount () {
-    window.removeEventListener("resize", this.closeDrawer)
-  }
+  // componentWillUnmount () {
+  //   window.removeEventListener("resize", this.closeDrawer)
+  // }
 
   render () {
     const closedStyle: CSSProperties = {
