@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Props } from "./App";
 import { Timeline, TimelineEvent, TimelineBlip } from 'react-event-timeline'
-import ui from "../images/ui.png"
+import ui from "../static/images/ui.png"
 import LazyLoad from "../components/LazyLoad"
 
 const Education: React.FunctionComponent<Props> = props => (
@@ -11,7 +11,7 @@ const Education: React.FunctionComponent<Props> = props => (
           <TimelineEvent 
             title={
               <div>
-                <div style={{fontSize: "1.05rem", fontWeight: 500}}><a target={"_blank"} href={"http://www.cs.ui.ac.id/"}>Computer Science Undergraduate Student</a></div>
+                <div style={{fontSize: "1.05rem", fontWeight: 500}}><a rel={"noopener noreferrer"} target={"_blank"} href={"http://www.cs.ui.ac.id/"}>Computer Science Undergraduate Student</a></div>
                 <div style={{fontSize: "0.85rem"}}>Universitas Indonesia</div>
               </div>
             }

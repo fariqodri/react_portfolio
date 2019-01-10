@@ -1,10 +1,10 @@
 import React from "react"
 //Images
-import fqa from "../images/macbookfqa.png"
-import lapor from "../images/macbooklapor.png"
-import tanamin from "../images/macbooktanamin.png"
-import lki from "../images/macbooklki.png"
-import port from "../images/macbookport2.png"
+import fqa from "../static/images/macbookfqa.png"
+import lapor from "../static/images/macbooklapor.png"
+import tanamin from "../static/images/macbooktanamin.png"
+import lki from "../static/images/macbooklki.png"
+import port from "../static/images/macbookport2.png"
 
 import Project from "../components/Project"
 import { Props } from "./App";
@@ -17,7 +17,7 @@ const Projects: React.FunctionComponent<Props> = props => {
     <div className={className} id={id} style={{...style}}>
       <h3>My Projects Gallery</h3>
       <Project
-        title={<h4><a href={"http://fariqodri.herokuapp.com"} target={"_blank"}>Personal Portfolio V1</a></h4>}
+        title={<h4><a rel={"noopener noreferrer"} href={"http://fariqodri.herokuapp.com"} target={"_blank"}>Personal Portfolio V1</a></h4>}
         img={<img className={"mockup"} src={fqa}/>}
         desc={
           <Description className={"proj-desc"}>
@@ -36,7 +36,7 @@ const Projects: React.FunctionComponent<Props> = props => {
         ]}
       />
       <Project
-        title={<h4><a href={"https://v3.lapor.go.id/"} target={"_blank"}>LAPOR V3</a></h4>}
+        title={<h4><a rel={"noopener noreferrer"} href={"https://v3.lapor.go.id/"} target={"_blank"}>LAPOR V3</a></h4>}
         img={<img className={"mockup"} src={lapor}/>}
         desc={
           <Description className={"proj-desc"}>
@@ -54,7 +54,7 @@ const Projects: React.FunctionComponent<Props> = props => {
         ]}
       />
       <Project
-        title={<h4><a href={"http://tanamin.herokuapp.com/"} target={"_blank"}>tanamin</a></h4>}
+        title={<h4><a rel={"noopener noreferrer"} href={"http://tanamin.herokuapp.com/"} target={"_blank"}>tanamin</a></h4>}
         img={<img className={"mockup"} src={tanamin}/>}
         desc={
           <Description className={"proj-desc"}>
@@ -74,7 +74,7 @@ const Projects: React.FunctionComponent<Props> = props => {
         ]}
       />
       <Project
-        title={<h4><a href={"http://lantaikayuindonesia.herokuapp.com/"} target={"_blank"}>Lantai Kayu Indonesia</a></h4>}
+        title={<h4><a rel={"noopener noreferrer"} href={"http://lantaikayuindonesia.herokuapp.com/"} target={"_blank"}>Lantai Kayu Indonesia</a></h4>}
         img={<img className={"mockup"} src={lki}/>}
         desc={
           <Description className={"proj-desc"}>
@@ -91,7 +91,7 @@ const Projects: React.FunctionComponent<Props> = props => {
         ]}
       />
       <Project
-        title={<h4><a href={"http://lantaikayuindonesia.herokuapp.com/"} target={"_blank"}>Personal Portfolio V2</a></h4>}
+        title={<h4><a rel={"noopener noreferrer"} href={"https://fariqodri.com/"} target={"_blank"}>Personal Portfolio V2</a></h4>}
         img={<img className={"mockup"} src={port}/>}
         desc={
           <Description className={"proj-desc"}>

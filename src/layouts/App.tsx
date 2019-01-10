@@ -1,5 +1,5 @@
 import React, { Component, CSSProperties } from 'react';
-import '../App.css';
+import '../static/css/App.css';
 import Education from './Education';
 import Experience from './Experience';
 import Responsive from 'react-responsive';
@@ -22,16 +22,6 @@ class App extends Component {
   resize = () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
-
-  componentDidMount () {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-    window.addEventListener('resize', this.resize)
-  }
-
-  componentWillUnmount () {
-    window.removeEventListener('resize', this.resize)
   }
 
   public render() {

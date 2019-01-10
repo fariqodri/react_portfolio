@@ -9,15 +9,15 @@ interface ThisProps extends Props {
 const List: React.FunctionComponent<ThisProps> = props => {
   const list = React.Children.map(props.children, ((v, i) => {
       if (!props.horizontal) {
-        return props.space ? <li style={{marginBottom: props.space}} key={i}>{v}</li> : <li key={i}>{v}</li>
+        return props.space ? <div style={{marginBottom: props.space}} key={i}>{v}</div> : <div key={i}>{v}</div>
       }
-      return props.space ? <li style={{marginRight: props.space, display: "inline"}} key={i}>{v}</li> : <li style={{display: "inline"}} key={i}>{v}</li>
+      return props.space ? <div style={{marginRight: props.space}} key={i}>{v}</div> : <div style={{}} key={i}>{v}</div>
     }
   ))
   return (
-    <ul className={props.className} style={{...props.style, listStyleType: "none", paddingLeft: "0px"}}>
+    <div className={props.className} style={{...props.style, paddingLeft: "0px", display: "flex"}}>
       {list}
-    </ul>
+    </div>
   )
 }
 export default List;

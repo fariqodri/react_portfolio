@@ -9,6 +9,8 @@ import { toggleVisibility } from '../actions/name';
 import { Dispatch } from 'redux';
 import { connect } from "react-redux";
 
+import "../static/css/fontawesome/css/all.css"
+
 interface PropsFromDispatch {
   setVisibility: (isVisible: boolean) => void
 }
@@ -41,10 +43,10 @@ const Intro: React.FunctionComponent<PropsFromDispatch & Props> = props => (
       </div>
       <div className={"list-container"}>
         <List style={{float: "right"}} className={"conList"}>
-          <a target={"_blank"} href={"https://www.facebook.com/fari.vanpersie.7?ref=bookmarks"}><i style={{color: "#3b5998"}} className="fab fa-facebook"></i></a>
-          <a target={"_blank"} href={"https://linkedin.com/in/fariqodri"}><i style={{color: "#0077b5"}} className="fab fa-linkedin"></i></a>
-          <a target={"_blank"} href={"https://gitlab.com/fariqodri"}><i style={{color: "#E2432A"}} className="fab fa-gitlab"></i></a>
-          <a target={"_blank"} href={"https://www.instagram.com/fariqodri/"}><i style={{color: "#8a3ab9"}} className="fab fa-instagram"></i></a>
+          <a rel={"noopener noreferrer"} target={"_blank"} href={"https://www.facebook.com/fari.vanpersie.7?ref=bookmarks"}><i style={{color: "#3b5998"}} className="fab fa-facebook"></i></a>
+          <a rel={"noopener noreferrer"} target={"_blank"} href={"https://linkedin.com/in/fariqodri"}><i style={{color: "#0077b5"}} className="fab fa-linkedin"></i></a>
+          <a rel={"noopener noreferrer"} target={"_blank"} href={"https://gitlab.com/fariqodri"}><i style={{color: "#E2432A"}} className="fab fa-gitlab"></i></a>
+          <a rel={"noopener noreferrer"} target={"_blank"} href={"https://www.instagram.com/fariqodri/"}><i style={{color: "#8a3ab9"}} className="fab fa-instagram"></i></a>
         </List>
       </div>
     </Description>

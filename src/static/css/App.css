@@ -25,7 +25,6 @@
   display: flex;
   align-items:center;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
 }
 
 a {
@@ -115,9 +114,11 @@ p {
     width: 100%;
   }
 
-  .conList > li {
-    display: inline;
-    margin-right: 10px;
+  .conList {
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 100%
   }
 
   .list-container {
@@ -132,7 +133,7 @@ p {
     font-size: 1.7rem
   }
   .fab {
-    font-size: 1.2rem
+    font-size: 1.45rem
   }
 
   .skill-card {
@@ -164,8 +165,12 @@ p {
     padding-right: 5vw;
   }
 
-  .conList > li {
-    margin-bottom: 1rem;
+  .conList {
+    flex-direction: column;
+  }
+
+  .conList > div {
+    margin-bottom: 15px
   }
 
   .section {
