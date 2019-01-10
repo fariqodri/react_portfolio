@@ -1,17 +1,17 @@
-.textLoop-enter {
+.brand-enter {
   opacity: 0;
 }
 
-.textLoop-enter.textLoop-enter-active {
+.brand-enter.brand-enter-active {
   opacity: 1;
   transition: opacity 300ms ease-in;
 }
 
-.textLoop-leave {
+.brand-leave {
   opacity: 0;
 }
 
-.textLoop-leave.textLoop-leave-active {
+.brand-leave.brand-leave-active {
   opacity: 0;
 }
 

@@ -863,6 +863,12 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-tooltip@^3.9.0":
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/@types/react-tooltip/-/react-tooltip-3.9.0.tgz#99246c208df53194db1fc96bb5345f0f66e63e52"
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-transition-group@1.x":
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-1.1.5.tgz#9023b0af51df4a384045e21ce00b44f4ce85334c"
@@ -7184,6 +7190,13 @@ react-text-loop@^2.0.1:
     prop-types "^15.6.2"
     react-fast-compare "2.0.4"
     react-motion "^0.5.2"
+
+react-tooltip@^3.9.2:
+  version "3.9.2"
+  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-3.9.2.tgz#df74e6f5fd454bb15132d5d2d506895cf505cb5e"
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.6.0"
 
 react-transition-group@1.x:
   version "1.2.1"

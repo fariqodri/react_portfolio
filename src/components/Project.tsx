@@ -7,6 +7,7 @@ type ProjectProps = {
   desc: React.ReactNode,
   techs: React.ReactNode | React.ReactNode[]
   title: React.ReactNode
+  placeholder?:React.ReactNode
 }
 
 const Project: React.FunctionComponent<Props & ProjectProps> = props => {
@@ -23,7 +24,7 @@ const Project: React.FunctionComponent<Props & ProjectProps> = props => {
             {desc}
           </div>
           <div style={{textAlign: "center", flex: 1}}>
-            <LazyLoad>
+            <LazyLoad placeholder={props.placeholder}>
               {img}
             </LazyLoad>
           </div>
@@ -35,7 +36,7 @@ const Project: React.FunctionComponent<Props & ProjectProps> = props => {
       <SmallScreen>
         <div style={{...props.style}}>
           <div style={{textAlign: "center", width: "100%"}}>
-            <LazyLoad>
+            <LazyLoad placeholder={props.placeholder}>
               {img}
             </LazyLoad>
           </div>

@@ -8,8 +8,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { toggleVisibility } from '../actions/name';
 import { Dispatch } from 'redux';
 import { connect } from "react-redux";
-
-import "../static/css/fontawesome/css/all.css"
+import ReactTooltip from "react-tooltip"
 
 interface PropsFromDispatch {
   setVisibility: (isVisible: boolean) => void
@@ -35,10 +34,11 @@ const Intro: React.FunctionComponent<PropsFromDispatch & Props> = props => (
         <div className={"name"}>
           I'm <span> </span>
           <VisibilitySensor onChange={props.setVisibility}>
-            <span style={{fontWeight: 500}}>
+            <span style={{fontWeight: 500}} data-tip data-for={"qori"}>
               Fari Qodri Andana
             </span>
           </VisibilitySensor>
+          <ReactTooltip id={"qori"} place={"right"} effect={"solid"}><p>Qori</p></ReactTooltip>
         </div>
       </div>
       <div className={"list-container"}>

@@ -2,11 +2,15 @@ import React, { Component } from "react"
 import LazyLoad from 'react-lazyload';
 import { Props } from "../layouts/App"
 
-const LazyLoadComponent: React.FunctionComponent = props => {
-  let {children} = props;
+type LazyLoadProps = {
+  placeholder?: React.ReactNode
+}
+
+const LazyLoadComponent: React.FunctionComponent<Props & LazyLoadProps> = props => {
+  let {children, placeholder} = props;
   const c: any = children
   return (
-    <LazyLoad height={"100%"}>{c}</LazyLoad>
+    <LazyLoad placeholder={placeholder} height={"100%"}>{c}</LazyLoad>
   )
 }
 

@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import NavList from "./NavbarList"
 import {toggleDrawer} from "../actions/drawer"
 import { Dispatch } from 'redux';
+import {CSSTransitionGroup} from "react-transition-group"
 
 interface PropsFromState {
   isNameVisible: boolean  
@@ -38,9 +39,14 @@ class Navbar extends Component<ReduxProps & Props, NavState> {
     
     return (
       <div style={{...this.props.style, display: "grid", gridTemplateColumns: "1fr 1fr", gridAutoFlow: "column"}} className={`navbar${this.props.className ? " " + this.props.className : ""}`}>
-        <div style={{cursor: "pointer"}} onClick={() => window.location.reload()}>
-          {brand}
-        </div>
+        <CSSTransitionGroup
+          transitionName={"brand"}
+          transitionLeave={false}
+        >
+          <div key={brand} style={{cursor: "pointer"}} onClick={() => window.location.reload()}>
+            {brand}
+          </div>
+        </CSSTransitionGroup>
         <BigScreen>
           <NavList className={"menu"}/>
         </BigScreen>
