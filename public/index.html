@@ -3,12 +3,18 @@
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132203394-1"></script>
-    <script>
+    <script type="text/javascript">
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-132203394-1');
+
+      // make a stylesheet link
+      var myCSS = document.createElement( "link" );
+      myCSS.rel = "stylesheet";
+      myCSS.href = '%PUBLIC_URL%/fontawesome/css/all.css';
+      // insert it at the end of the head in a legacy-friendly manner
+      document.head.insertBefore( myCSS, document.head.childNodes[ document.head.childNodes.length - 1 ].nextSibling );
     </script>
 
     <meta charset="utf-8" />
@@ -17,7 +23,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Fari Qodri Andana is a passionate student and web developer who is always eager on learning new stuffs. His desire to aim for perfection always push him to learn more and more"/>
+    <meta name="theme-color" content="#ffffff" />
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -33,7 +40,6 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Fari Qodri Andana</title>
-    <link rel="stylesheet" href="%PUBLIC_URL%/fontawesome/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
   <body>

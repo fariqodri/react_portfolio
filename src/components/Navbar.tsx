@@ -1,4 +1,5 @@
 import React, { Component, CSSProperties } from "react"
+import ReactDOM from "react-dom"
 import { Props, BigScreen, SmallScreen } from "../layouts/App";
 import {AppState} from "../store"
 import { connect } from "react-redux";
@@ -41,6 +42,7 @@ class Navbar extends Component<ReduxProps & Props, NavState> {
       <div style={{...this.props.style, display: "grid", gridTemplateColumns: "1fr 1fr", gridAutoFlow: "column"}} className={`navbar${this.props.className ? " " + this.props.className : ""}`}>
         <CSSTransitionGroup
           transitionName={"brand"}
+          transitionEnterTimeout={500}
           transitionLeave={false}
         >
           <div key={brand} style={{cursor: "pointer"}} onClick={() => window.location.reload()}>
