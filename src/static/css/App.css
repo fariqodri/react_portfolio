@@ -95,6 +95,10 @@ p {
     background-color: #89CFF0;
   }
 
+  .projects {
+    padding-right: 5vw;
+  }
+
   .start-button {
     bottom: 15vh;
   }

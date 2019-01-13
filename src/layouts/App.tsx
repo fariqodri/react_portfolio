@@ -35,7 +35,7 @@ class App extends Component {
       <Education style={{paddingTop:"10px"}} id={"edu"} className={"edu section"}/>
       <Experience style={{paddingTop:"10px"}} id={"exp"} className={"exp section"}/>
       <Skills id={"skills"} className={"skills section"} style={{paddingTop:"10px"}}/>
-      <Projects id={"projects"} className={"projects section"} style={{paddingLeft: "5vw", paddingTop:"10px", paddingRight: "5vw"}}/>
+      <Projects id={"projects"} className={"projects section"} style={{paddingLeft: "5vw", paddingTop:"10px"}}/>
     </div>
     )
   }
