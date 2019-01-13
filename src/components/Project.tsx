@@ -11,10 +11,10 @@ type ProjectProps = {
 }
 
 const Project: React.FunctionComponent<Props & ProjectProps> = props => {
-  let {title, img, desc, techs} = props
+  let {title, img, desc, techs, id} = props
   
   return (
-    <div style={{width: "100%", marginTop: "50px"}}>
+    <div id={id} style={{width: "100%", marginTop: "50px"}}>
       <div style={{width: "100%", textAlign:"center"}}>
         {title}
       </div>

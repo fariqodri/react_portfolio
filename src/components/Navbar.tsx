@@ -45,7 +45,7 @@ class Navbar extends Component<ReduxProps & Props, NavState> {
           transitionEnterTimeout={500}
           transitionLeave={false}
         >
-          <div key={brand} style={{cursor: "pointer"}} onClick={() => window.location.reload()}>
+          <div key={brand} style={{cursor: "pointer", float: "left"}} onClick={() => window.location.reload()}>
             {brand}
           </div>
         </CSSTransitionGroup>
