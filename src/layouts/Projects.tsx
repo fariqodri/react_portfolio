@@ -28,7 +28,7 @@ const Projects: React.FunctionComponent<Props> = props => {
         title={<h4><a rel={"noopener noreferrer"} href={"http://fariqodri.herokuapp.com"} target={"_blank"}>Personal Portfolio V1</a></h4>}
         img={<img className={"mockup"} src={fqa}/>}
         placeholder={<img src={fqa_thumb} height={"100%"}></img>}
-        desc={
+      desc={
           <p className={"proj-desc"}>
             This is my first project and my first real attempt to get into the world of web development. Although this project is quite simple,
             it's so important because this is the first milestone of my web development journey in that following year and it's safe to say that it is
