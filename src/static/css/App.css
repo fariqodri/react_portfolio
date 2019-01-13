@@ -47,7 +47,7 @@ a {
 }
 
 .slick-prev:before, .slick-next:before { 
-  color:red !important;
+  color:blue !important;
 }
 
 .pill-button:hover {
