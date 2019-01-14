@@ -47,6 +47,7 @@ const Intro: React.FunctionComponent<PropsFromDispatch & Props> = props => (
           <a title={"LinkedIn"}  rel={"noopener noreferrer"} target={"_blank"} href={"https://linkedin.com/in/fariqodri"}><i className="fab fa-linkedin"></i></a>
           <a title={"Gitlab"}  rel={"noopener noreferrer"} target={"_blank"} href={"https://gitlab.com/fariqodri"}><i className="fab fa-gitlab"></i></a>
           <a title={"Instagram"}  rel={"noopener noreferrer"} target={"_blank"} href={"https://www.instagram.com/fariqodri/"}><i className="fab fa-instagram"></i></a>
+          <a title={"Twitter"}  rel={"noopener noreferrer"} target={"_blank"} href={"https://twitter.com/fariqodri2"}><i className="fab fa-twitter"></i></a>
         </List>
       </div>
     </Description>
