@@ -95,17 +95,29 @@ p {
 }
 
 .proj-desc, .about-desc {
-  text-align: justify
+  text-align: justify;
+  margin-top: 0;
+  padding-right: 5px;
 }
 
 .link {
   text-decoration: underline;
 }
 
+.footer {
+  position: relative;
+  bottom: 0;
+  box-shadow: 0 -4px 8px 0 rgba(0,0,0,0.2);
+}
 
 @media only screen and (max-width: 767px) {
   .drawer {
     background-color: #89CFF0;
+  }
+
+  .footer {
+    font-size: 0.8em;
+    padding: 0 5px 0 5px;
   }
 
   .projects, .about {
@@ -165,11 +177,6 @@ p {
     font-size: 0.8em
   }
 
-  .proj-desc, .about-desc {
-    margin-top: 8px;
-    text-align: justify
-  }
-
   .section {
     margin-bottom: 40px;
   }
@@ -182,7 +189,10 @@ p {
 
 
 @media only screen and (min-width: 768px) {
-    .App {
+  .footer {
+    width: 100vw;
+  }
+  .App {
     padding-right: 5vw;
   }
 

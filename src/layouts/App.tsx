@@ -10,6 +10,8 @@ import Drawer from "../components/Drawer"
 import { Skills } from './Skills';
 import Projects from "./Projects"
 import About from "./About"
+import Footer from '../components/Footer';
+
 
 export const BigScreen: React.FunctionComponent = props => <Responsive {...props} minWidth={768}/>
 export const SmallScreen: React.FunctionComponent = props => <Responsive {...props} maxWidth={767}/>
@@ -19,12 +21,6 @@ export const SmallScreen: React.FunctionComponent = props => <Responsive {...pro
 // }
 
 class App extends Component {
-
-  resize = () => {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
-
   public render() {
     return (
       <div className="App">
@@ -38,6 +34,7 @@ class App extends Component {
       <Skills id={"skills"} className={"skills section"} style={{paddingTop:"10px"}}/>
       <Projects id={"projects"} className={"projects section"} style={{paddingLeft: "5vw", paddingTop:"10px"}}/>
       <About id={"about"} className={"about section"} style={{paddingLeft: "5vw", paddingTop:"10px"}}/>
+      <Footer id={"footer"} className={"footer"} style={{paddingTop:"10px", paddingBottom:"10px"}}/>
     </div>
     )
   }

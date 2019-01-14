@@ -1,5 +1,4 @@
-import React, { Component, CSSProperties } from "react"
-import ReactDOM from "react-dom"
+import React, { Component } from "react"
 import { Props, BigScreen, SmallScreen } from "../layouts/App";
 import {AppState} from "../store"
 import { connect } from "react-redux";
