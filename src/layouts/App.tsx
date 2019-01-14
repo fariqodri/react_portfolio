@@ -9,6 +9,7 @@ import Headroom from 'react-headroom';
 import Drawer from "../components/Drawer"
 import { Skills } from './Skills';
 import Projects from "./Projects"
+import About from "./About"
 
 export const BigScreen: React.FunctionComponent = props => <Responsive {...props} minWidth={768}/>
 export const SmallScreen: React.FunctionComponent = props => <Responsive {...props} maxWidth={767}/>
@@ -36,6 +37,7 @@ class App extends Component {
       <Experience style={{paddingTop:"10px"}} id={"exp"} className={"exp section"}/>
       <Skills id={"skills"} className={"skills section"} style={{paddingTop:"10px"}}/>
       <Projects id={"projects"} className={"projects section"} style={{paddingLeft: "5vw", paddingTop:"10px"}}/>
+      <About id={"about"} className={"about section"} style={{paddingLeft: "5vw", paddingTop:"10px"}}/>
     </div>
     )
   }

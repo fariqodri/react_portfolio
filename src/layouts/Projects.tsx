@@ -25,10 +25,10 @@ const Projects: React.FunctionComponent<Props> = props => {
       <h3>My Projects Gallery</h3>
       <Project
         id={"first"}
-        title={<h4><a rel={"noopener noreferrer"} href={"http://fariqodri.herokuapp.com"} target={"_blank"}>Personal Portfolio V1</a></h4>}
+        title={<h4><a title={"Portfolio V1"} rel={"noopener noreferrer"} href={"http://fariqodri.herokuapp.com"} target={"_blank"}>Personal Portfolio V1</a></h4>}
         img={<img className={"mockup"} src={fqa}/>}
         placeholder={<img src={fqa_thumb} height={"100%"}></img>}
-      desc={
+        desc={
           <p className={"proj-desc"}>
             This is my first project and my first real attempt to get into the world of web development. Although this project is quite simple,
             it's so important because this is the first milestone of my web development journey in that following year and it's safe to say that it is
@@ -38,16 +38,16 @@ const Projects: React.FunctionComponent<Props> = props => {
         techs={[
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>CSS</Pill>,
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>HTML</Pill>,
-          <Pill newWindow href={"https://www.djangoproject.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Django</Pill>,
-          <Pill newWindow href={"https://jquery.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>jQuery</Pill>,
+          <Pill newWindow href={"https://www.djangoproject.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>Django</span></Pill>,
+          <Pill newWindow href={"https://jquery.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>jQuery</span></Pill>,
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>SQLite</Pill>,
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>JavaScript</Pill>,
-          <Pill newWindow href={"https://gitlab.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Gitlab</Pill>,
-          <Pill newWindow href={"https://www.heroku.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Heroku</Pill>,
+          <Pill newWindow href={"https://gitlab.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>Gitlab</span></Pill>,
+          <Pill newWindow href={"https://www.heroku.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>Heroku</span></Pill>,
         ]}
       />
       <Project
-        title={<h4><a rel={"noopener noreferrer"} href={"https://v3.lapor.go.id/"} target={"_blank"}>LAPOR V3</a></h4>}
+        title={<h4><a title={"LAPOR"} rel={"noopener noreferrer"} href={"https://v3.lapor.go.id/"} target={"_blank"}>LAPOR V3</a></h4>}
         img={<img className={"mockup"} src={lapor}/>}
         placeholder={<img src={lapor_thumb} height={"100%"}></img>}
         desc={
@@ -61,15 +61,15 @@ const Projects: React.FunctionComponent<Props> = props => {
         techs={[
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>CSS</Pill>,
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>HTML</Pill>,
-          <Pill newWindow href={"https://laravel.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Laravel</Pill>,
-          <Pill newWindow href={"https://jquery.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>jQuery</Pill>,
+          <Pill newWindow href={"https://laravel.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>Laravel</span></Pill>,
+          <Pill newWindow href={"https://jquery.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>jQuery</span></Pill>,
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>MySQL</Pill>,
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>JavaScript</Pill>,
-          <Pill newWindow href={"https://octobercms.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>October CMS</Pill>
+          <Pill newWindow href={"https://octobercms.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>October CMS</span></Pill>
         ]}
       />
       <Project
-        title={<h4><a rel={"noopener noreferrer"} href={"http://tanamin.herokuapp.com/"} target={"_blank"}>tanamin</a></h4>}
+        title={<h4><a title={"tanamin"} rel={"noopener noreferrer"} href={"http://tanamin.herokuapp.com/"} target={"_blank"}>tanamin</a></h4>}
         img={<img className={"mockup"} src={tanamin}/>}
         placeholder={<img src={tanamin_thumb} height={"100%"}></img>}
         desc={
@@ -81,17 +81,17 @@ const Projects: React.FunctionComponent<Props> = props => {
         techs={[
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>CSS</Pill>,
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>HTML</Pill>,
-          <Pill newWindow href={"https://www.djangoproject.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Django</Pill>,
-          <Pill newWindow href={"https://jquery.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>jQuery</Pill>,
+          <Pill newWindow href={"https://www.djangoproject.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>Django</span></Pill>,
+          <Pill newWindow href={"https://jquery.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>jQuery</span></Pill>,
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>SQLite</Pill>,
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>JavaScript</Pill>,
-          <Pill newWindow href={"https://en.wikipedia.org/wiki/Constraint_satisfaction_problem"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Artificial Intelligence</Pill>,
-          <Pill newWindow href={"https://gitlab.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Gitlab</Pill>,
-          <Pill newWindow href={"https://www.heroku.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Heroku</Pill>,
+          <Pill newWindow href={"https://en.wikipedia.org/wiki/Constraint_satisfaction_problem"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>Artificial Intelligence</span></Pill>,
+          <Pill newWindow href={"https://gitlab.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>Gitlab</span></Pill>,
+          <Pill newWindow href={"https://www.heroku.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>Heroku</span></Pill>,
         ]}
       />
       <Project
-        title={<h4><a rel={"noopener noreferrer"} href={"http://lantaikayuindonesia.herokuapp.com/"} target={"_blank"}>Lantai Kayu Indonesia</a></h4>}
+        title={<h4><a title={"Lantai Kayu Indonesia"} rel={"noopener noreferrer"} href={"http://lantaikayuindonesia.herokuapp.com/"} target={"_blank"}>Lantai Kayu Indonesia</a></h4>}
         img={<img className={"mockup"} src={lki}/>}
         placeholder={<img src={lki_thumb} height={"100%"}></img>}
         desc={
@@ -106,12 +106,12 @@ const Projects: React.FunctionComponent<Props> = props => {
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>HTML</Pill>,
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>jQuery</Pill>,
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>JavaScript</Pill>,
-          <Pill newWindow href={"https://gitlab.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Gitlab</Pill>,
-          <Pill newWindow href={"https://www.heroku.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Heroku</Pill>,
+          <Pill newWindow href={"https://gitlab.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>Gitlab</span></Pill>,
+          <Pill newWindow href={"https://www.heroku.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>Heroku</span></Pill>,
         ]}
       />
       <Project
-        title={<h4><a rel={"noopener noreferrer"} href={"https://fariqodri.com/"} target={"_blank"}>Personal Portfolio V2</a></h4>}
+        title={<h4><a title={"Portfolio V2"} rel={"noopener noreferrer"} href={"https://fariqodri.com/"} target={"_blank"}>Personal Portfolio V2</a></h4>}
         img={<img className={"mockup"} src={port}/>}
         placeholder={<img src={port_thumb} height={"100%"}></img>}
         desc={
@@ -126,9 +126,9 @@ const Projects: React.FunctionComponent<Props> = props => {
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>HTML</Pill>,
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Redux</Pill>,
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>CSS</Pill>,
-          <Pill newWindow href={"https://gitlab.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Gitlab</Pill>,
-          <Pill newWindow href={"https://cloud.google.com/compute/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Google Cloud Platform</Pill>,
-          <Pill newWindow href={"https://www.typescriptlang.org/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>TypeScript</Pill>,
+          <Pill newWindow href={"https://gitlab.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>Gitlab</span></Pill>,
+          <Pill newWindow href={"https://cloud.google.com/compute/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>Google Cloud Platform</span></Pill>,
+          <Pill newWindow href={"https://www.typescriptlang.org/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>Typescript</span></Pill>,
         ]}
       />
     </div>

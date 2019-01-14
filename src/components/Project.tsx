@@ -3,10 +3,10 @@ import { Props, BigScreen, SmallScreen } from "../layouts/App";
 import LazyLoad from "./LazyLoad"
 
 type ProjectProps = {
-  img: any
-  desc: React.ReactNode,
-  techs: React.ReactNode | React.ReactNode[]
-  title: React.ReactNode
+  img?: any
+  desc?: React.ReactNode,
+  techs?: React.ReactNode | React.ReactNode[]
+  title?: React.ReactNode
   placeholder?:React.ReactNode
 }
 

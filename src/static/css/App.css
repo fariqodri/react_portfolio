@@ -75,6 +75,11 @@ img.mockup {
   width: 100%;
 }
 
+img.profile {
+  width: 75%;
+  border-radius: 50%;
+}
+
 .headroom--pinned, .headroom--unfixed {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -89,13 +94,21 @@ p {
   text-align: center;
 }
 
+.proj-desc, .about-desc {
+  text-align: justify
+}
+
+.link {
+  text-decoration: underline;
+}
+
 
 @media only screen and (max-width: 767px) {
   .drawer {
     background-color: #89CFF0;
   }
 
-  .projects {
+  .projects, .about {
     padding-right: 5vw;
   }
 
@@ -152,8 +165,9 @@ p {
     font-size: 0.8em
   }
 
-  .proj-desc {
+  .proj-desc, .about-desc {
     margin-top: 8px;
+    text-align: justify
   }
 
   .section {
