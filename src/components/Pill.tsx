@@ -38,7 +38,7 @@ export default class Pill extends Component<PillProps & Props, PillState> {
     const appliedStyle: CSSProperties = isHover ? hoverStyle : realStyle
     return (
       <a rel={"noopener noreferrer"} href={href} target={newWindow ? "_blank" : "_self"}>
-        <button onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} id={id} className={`pill-button${className}`} style={{...appliedStyle, padding: "10px", margin: "5px", cursor: "pointer"}}>
+        <button onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} id={id} className={`pill-button${className}`} style={{...appliedStyle, padding: "10px", margin: "5px", cursor: "pointer", outline:"none"}}>
           {children}
         </button>
       </a>

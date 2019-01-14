@@ -38,6 +38,9 @@ const About: React.FunctionComponent<Props> = props => {
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>
             <i className="fas fa-map-marker-alt"></i> : East Jakarta, Greater Jakarta Area, Indonesia
           </Pill>,
+          <Pill newWindow href={"https://drive.google.com/open?id=1qNnFFXWxll3CNZRvaqhI-neB5I38mUwt"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>
+            <span className={"link"}>See my CV <i className="fas fa-arrow-right"></i></span>
+          </Pill>,
         ]}
       />
     </div>
