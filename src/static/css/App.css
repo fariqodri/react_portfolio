@@ -148,7 +148,7 @@ p {
 
   .conList {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     justify-items: center;
     width: 100%
   }
