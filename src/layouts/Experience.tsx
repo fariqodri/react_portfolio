@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Props } from "./App";
 import { Timeline, TimelineEvent, TimelineBlip } from 'react-event-timeline'
-import warpin from "../static/images/warpin.png"
-import ksp from "../static/images/ksp.png"
+import kata from "../static/images/kata_logo.png"
+import pinhome from "../static/images/pinhome_logo.png"
+import telkomsel from "../static/images/telkomsel_logo.jpeg"
 import LazyLoad from "../components/LazyLoad"
 
 const Experience: React.FunctionComponent<Props> = props => (
@@ -10,23 +11,85 @@ const Experience: React.FunctionComponent<Props> = props => (
     <h3>Professional Experience</h3>
     <Timeline>
       <TimelineEvent
-        title = {<div style={{fontSize: "1.05rem"}}><a rel={"noopener noreferrer"} target={"_blank"} href={"https://warungpintar.co.id/"}>Warung Pintar</a></div>}
-        icon={<LazyLoad><img style={{borderRadius: "50%"}} src={warpin} width={"100%"} height={"100%"}/></LazyLoad>}
+        title = {<div style={{fontSize: "1.05rem"}}><a rel={"noopener noreferrer"} target={"_blank"} href={"https://kata.ai/"}>Kata.ai</a></div>}
+        icon={<LazyLoad><img style={{borderRadius: "50%"}} src={kata} width={"100%"} height={"100%"}/></LazyLoad>}
         bubbleStyle={{borderColor: "transparent"}}
-        subtitle = {<p>January 2018 - February 2018</p>}
+        subtitle = {<p>December 2019 - February 2021</p>}
       >
-        <p>My responsibilities were to explore Odoo ERP and to make it ready for Warung Pintar to use it for the very first time.</p>
+        <p>
+          Kata.ai is a chatbot and conversational AI startup. Its main product is a platform to build the chatbot and AI model. 
+          During my time at Kata, I served two roles as a data engineer and software engineer.
+        </p>
+        <h3>Software Engineer</h3>
+        <p>
+          <ul>
+            <li>
+              Involved in the company's effort to upgrade its NLP and chatbot development platform.
+            </li>
+            <li>
+              Explore and research the OAuth ecosystem, and how we might be able to deploy and maintain the technology in Kubernetes to serve the new platform
+            </li>
+          </ul>
+        </p>
+        <h3>Data Engineer</h3>
+        <p>
+          <ul>
+            <li>
+              Involved in the development and maintenancce of big data processing infrastructure with Hadoop ecosystem, Kubernetes, and AWS.
+            </li>
+            <li>
+              Conducted various experiments to make the processing pipeline cheaper, faster, and easier to maintain and track.
+            </li>
+            <li>
+              Developed a library to easily send message from the services the data ingestion pipeline with Kafka and Avro schema. The library was 
+              written for 2 languages, Go and Python
+            </li>
+          </ul>
+        </p>
       </TimelineEvent>
       <TimelineEvent
-        title = {<div style={{fontSize: "1.05rem"}}><a rel={"noopener noreferrer"} target={"_blank"} href={"http://www.ksp.go.id/"}>Presidential Staff Office of Republic of Indonesia (Kantor Staf Presiden Republik Indonesia)</a></div>}
-        subtitle = {<p>June 2018 - August 2018</p>}
+        title = {<div style={{fontSize: "1.05rem"}}><a rel={"noopener noreferrer"} target={"_blank"} href={"http://pinhome.id"}>Pinhome</a></div>}
+        subtitle = {<p>February 2021 - December 2021</p>}
         bubbleStyle={{borderColor: "transparent"}}
-        icon={<LazyLoad><img style={{borderRadius: "50%"}} src={ksp} width={"100%"} height={"100%"}/></LazyLoad>}
+        icon={<LazyLoad><img style={{borderRadius: "50%"}} src={pinhome} width={"100%"} height={"100%"}/></LazyLoad>}
       >
-        <p>My main task was to create a chat bot for "LAPOR!" using Laravel 
-          framework. I also help maintaining and creating additional features in new 
-          version of "LAPOR!" website. I was also given a <span><a rel={"noopener noreferrer"} target={"_blank"} href={"https://drive.google.com/open?id=1hOGDLYfAf2Bp7erLsoA_UPq1Ptp6hG2R"}>
-          certificate</a></span> to reward my work during the internship program.</p>
+        <p>Pinhome is a property marketplace and home service startup. My responsibility in Pinhome as a <b>software engineer</b> was:</p>
+        <p>
+          <ul>
+            <li>
+              Involved in the development of backend system of a property marketplace application. All of the backend was written with Go language, 
+              and the database used was PostgreSQL and ElasticSearch.
+            </li>
+            <li>
+              Created a Kubernetes YAML file to deploy a new service to the company's Kubernetes cluster.
+            </li>
+            <li>
+              Involved in the improvement of the property discovery part of the Pinhome's main website.
+            </li>
+          </ul>
+        </p>
+      </TimelineEvent>
+      <TimelineEvent
+        title = {<div style={{fontSize: "1.05rem"}}><a rel={"noopener noreferrer"} target={"_blank"} href={"http://telkomsel.com"}>Telkomsel</a></div>}
+        subtitle = {<p>December 2021 - Present</p>}
+        bubbleStyle={{borderColor: "transparent"}}
+        icon={<LazyLoad><img style={{borderRadius: "50%"}} src={telkomsel} width={"100%"} height={"100%"}/></LazyLoad>}
+      >
+        <p>
+          Telkomsel is the biggest telecommunication operator in Indonesia with more tha 170 million subscribers. I'm currently assigned 
+          at the department whose function is detect fraud and revenue assurance. My responsibility in this department is:
+        </p>
+        <p>
+          <ul>
+            <li>
+              Involved in the development and maintenance of the revenue assurance and fraud management platform. 
+              This platform mainly uses HDFS as data storage layer and Apache Spark as the data processing layer.
+            </li>
+            <li>
+              Coordinating with an international team consisting of Indians, Malaysians, and Indonesians on the daily basis
+            </li>
+          </ul>
+        </p>
       </TimelineEvent>
       <TimelineBlip
         icon= {<i className="fas fa-question"></i>}

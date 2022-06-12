@@ -52,149 +52,40 @@ export class Skills extends Component<Props, SkillsState> {
     return (
       <div id={this.props.id} className={this.props.className} style={{...this.props.style, paddingLeft: "5vw"}}>
         <h3>My Skills</h3>
-        <p>Programming Languages</p>
-        <Slider {...settings}>
-          <div>
-            <SkillCard 
-              className={"skill-card"}
-              percentage={80}
-              vertical
-              fillerStyle={{backgroundColor: "#89CFF0"}}
-            > 
-              <div className={"child"}>JavaScript</div>
-            </SkillCard>
+        <div style={{display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center"}}>
+          <div style={{flexGrow: 1}}>
+            <b>Programming Languages</b>
+            <ul>
+              <li>JavaScript</li>
+              <li>Java</li>
+              <li>Python</li>
+              <li>TypeScript</li>
+              <li>Go</li>
+              <li>Shell</li>
+              <li>SQL</li>
+            </ul>
           </div>
-          <div>
-            <SkillCard 
-              className={"skill-card"}
-              percentage={70}
-              vertical
-              fillerStyle={{backgroundColor: "#89CFF0"}}
-            > 
-              <div className={"child"}>Java</div>
-            </SkillCard>
+          <div style={{flexGrow: 1}}>
+            <b>Frameworks</b>
+            <ul>
+              <li>Django</li>
+              <li>NestJS</li>
+              <li>Laravel</li>
+              <li>Android SDK</li>
+              <li>ReactJS</li>
+              <li>Node.js</li>
+            </ul>
           </div>
-          <div>
-            <SkillCard 
-              className={"skill-card"}
-              percentage={85}
-              vertical
-              fillerStyle={{backgroundColor: "#89CFF0"}}
-            > 
-              <div className={"child"}>Python</div>
-            </SkillCard>
+          <div style={{flexGrow: 1}}>
+            <b>Tools</b>
+            <ul>
+              <li>Apache Spark</li>
+              <li>Apache Kafka</li>
+              <li>Docker</li>
+              <li>Kubernetes</li>
+            </ul>
           </div>
-          <div>
-            <SkillCard 
-              className={"skill-card"}
-              percentage={80}
-              vertical
-              fillerStyle={{backgroundColor: "#89CFF0"}}
-            > 
-              <div className={"child"}>TypeScript</div>
-            </SkillCard>
-          </div>
-          <div>
-            <SkillCard 
-              className={"skill-card"}
-              percentage={30}
-              vertical
-              fillerStyle={{backgroundColor: "#89CFF0"}}
-            > 
-              <div className={"child"}>Go</div>
-            </SkillCard>
-          </div>
-          <div>
-            <SkillCard 
-              className={"skill-card"}
-              percentage={60}
-              vertical
-              fillerStyle={{backgroundColor: "#89CFF0"}}
-            > 
-              <div className={"child"}>Erlang</div>
-            </SkillCard>
-          </div>
-        </Slider>
-        
-        <br/>
-        <p>Frameworks</p>
-        <Slider {...settings} infinite={false} arrows={false}>
-          <div>
-            <SkillCard 
-              className={"skill-card"}
-              percentage={85}
-              vertical
-              fillerStyle={{backgroundColor: "#89CFF0"}}
-            > 
-              <div className={"child"}>Django</div>
-            </SkillCard>
-          </div>
-          <div>
-            <SkillCard 
-              className={"skill-card"}
-              percentage={75}
-              vertical
-              fillerStyle={{backgroundColor: "#89CFF0"}}
-            > 
-              <div className={"child"}>Laravel</div>
-            </SkillCard>
-          </div>
-          <div>
-            <SkillCard 
-              className={"skill-card"}
-              percentage={70}
-              vertical
-              fillerStyle={{backgroundColor: "#89CFF0"}}
-            > 
-              <div className={"child"}>Android</div>
-            </SkillCard>
-          </div>
-        </Slider>
-
-        <br/>
-        <p>Library</p>
-        <Slider {...settings} slidesToScroll={2}>
-          <div>
-            <SkillCard 
-              className={"skill-card"}
-              percentage={85}
-              vertical
-              fillerStyle={{backgroundColor: "#89CFF0"}}
-            > 
-              <div className={"child"}>ReactJS</div>
-            </SkillCard>
-          </div>
-          <div>
-            <SkillCard 
-              className={"skill-card"}
-              percentage={70}
-              vertical
-              fillerStyle={{backgroundColor: "#89CFF0"}}
-            > 
-              <div className={"child"}>React Native</div>
-            </SkillCard>
-          </div>
-          <div>
-            <SkillCard 
-              className={"skill-card"}
-              percentage={80}
-              vertical
-              fillerStyle={{backgroundColor: "#89CFF0"}}
-            > 
-              <div className={"child"}>ExpressJS</div>
-            </SkillCard>
-          </div>
-          <div>
-            <SkillCard 
-              className={"skill-card"}
-              percentage={50}
-              vertical
-              fillerStyle={{backgroundColor: "#89CFF0"}}
-            > 
-              <div className={"child"}>scikit-learn (Python)</div>
-            </SkillCard>
-          </div>
-        </Slider>
+        </div>
       </div>
     )
   }

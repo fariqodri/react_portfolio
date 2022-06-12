@@ -34,7 +34,6 @@ class App extends Component {
       <Skills id={"skills"} className={"skills section"} style={{paddingTop:"10px"}}/>
       <Projects id={"projects"} className={"projects section"} style={{paddingLeft: "5vw", paddingTop:"10px"}}/>
       <About id={"about"} className={"about section"} style={{paddingLeft: "5vw", paddingTop:"10px"}}/>
-      <Footer id={"footer"} className={"footer"} style={{paddingTop:"10px", paddingBottom:"10px"}}/>
     </div>
     )
   }

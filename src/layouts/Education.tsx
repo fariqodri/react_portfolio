@@ -11,23 +11,33 @@ const Education: React.FunctionComponent<Props> = props => (
           <TimelineEvent 
             title={
               <div>
-                <div style={{fontSize: "1.05rem", fontWeight: 500}}><a rel={"noopener noreferrer"} target={"_blank"} href={"http://www.cs.ui.ac.id/"}>Computer Science Undergraduate Student</a></div>
+                <div style={{fontSize: "1.05rem", fontWeight: 500}}><a rel={"noopener noreferrer"} target={"_blank"} href={"http://www.cs.ui.ac.id/"}>Computer Science Undergraduate</a></div>
                 <div style={{fontSize: "0.85rem"}}>Universitas Indonesia</div>
               </div>
             }
             icon={<LazyLoad><img style={{borderRadius: "50%"}} src={ui} width={"100%"} height={"100%"}/></LazyLoad>}
             bubbleStyle={{borderColor: "transparent"}}
-            subtitle={<p>August 2016 - Present</p>}
+            subtitle={<p>August 2016 - January 2020</p>}
             >
-            <p>I take a lot of courses that help to improve my skill, including but not 
-              limited to website design and programming, data structures and algorithm, software engineering. 
-              Besides studying, I participate in a lot of activities, therefore I know how to interact with people whom have the 
-              same interests with me.</p>
+            <p>
+              As a computer science student, I learn and improve my skills inside and outside of the classroom. 
+              During my time as a student, I did 2 internships and 2 freelance work. All of them were in software engineering role.</p>
           </TimelineEvent>
-          <TimelineBlip
-            icon= {<i className="fas fa-question"></i>}
-            title={"to be continued..."}
-          />
+          <TimelineEvent 
+            title={
+              <div>
+                <div style={{fontSize: "1.05rem", fontWeight: 500}}><a rel={"noopener noreferrer"} target={"_blank"} href={"http://www.cs.ui.ac.id/"}>Information Technology Postgraduate</a></div>
+                <div style={{fontSize: "0.85rem"}}>Universitas Indonesia</div>
+              </div>
+            }
+            icon={<LazyLoad><img style={{borderRadius: "50%"}} src={ui} width={"100%"} height={"100%"}/></LazyLoad>}
+            bubbleStyle={{borderColor: "transparent"}}
+            subtitle={<p>August 2020 - September 2022</p>}
+            >
+            <p>
+            Learning about the role of IT in business, management, and strategy. I took this degree to gain new perspective apart from my engineer perspective.
+            </p>
+          </TimelineEvent>
         </Timeline>
       </div>
 )

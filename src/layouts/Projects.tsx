@@ -1,14 +1,13 @@
 import React from "react"
 //Images
 import fqa from "../static/images/macbookfqa.png"
-import lapor from "../static/images/macbooklapor.png"
 import tanamin from "../static/images/macbooktanamin.png"
 import lki from "../static/images/macbooklki.png"
 import port from "../static/images/macbookport2.png"
+import riku from "../static/images/riku.png"
 
 //Thumbnails
 import fqa_thumb from "../static/images/macbookfqa_thumb.png"
-import lapor_thumb from "../static/images/macbooklapor_thumb.png"
 import tanamin_thumb from "../static/images/macbooktanamin_thumb.png"
 import lki_thumb from "../static/images/macbooklki_thumb.png"
 import port_thumb from "../static/images/macbookport2_thumb.png"
@@ -47,25 +46,23 @@ const Projects: React.FunctionComponent<Props> = props => {
         ]}
       />
       <Project
-        title={<h4><a title={"LAPOR"} rel={"noopener noreferrer"} href={"https://v3.lapor.go.id/"} target={"_blank"}>LAPOR V3</a></h4>}
-        img={<img className={"mockup"} src={lapor}/>}
-        placeholder={<img src={lapor_thumb} height={"100%"}></img>}
+        title={<h4><a title={"Pinhome\'s Rumah Idamanku"} rel={"noopener noreferrer"} href={"https://play.google.com/store/apps/details?id=id.pinhome.consumer.mandiri&hl=in&gl=US"} target={"_blank"}>Pinhome's Rumah Idamanku</a></h4>}
+        img={<img src={riku}/>}
+        placeholder={<img src={riku} height={"100%"}></img>}
         desc={
           <p className={"proj-desc"}>
-            LAPOR is my first involvement in a large scale website. I was involved in this project during my internship period in
-            Presidential Staff Office of Republic of Indonesia (KSP). LAPOR is basically a place where the people of Indonesia can report
-            problems that happen around them. If the problem that is reported is valid, then a team will be deployed to take care of it
-            directly. 
+            Rumah Idamanku (RIKU) is a product I helped to create during my time in Pinhome. RIKU is basically a property marketplace with
+            several mortgage features. RIKU is a product of partnership with Bank Mandiri, one of the biggest state-owned banks in Indonesia, as the 
+            mortgage creditor. I was involved in the RIKU project in February 2021 to November 2021. My role in the project was to create reliable APIs with Golang.
+            As Pinhome was heading toward microservices architecture, I was tasked to split the mortgage related logic to a new backend service with 
+            better architecture. I used DDD architecture in the new service.
           </p>
         }
         techs={[
-          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>CSS</Pill>,
-          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>HTML</Pill>,
-          <Pill newWindow href={"https://laravel.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>Laravel</span></Pill>,
-          <Pill newWindow href={"https://jquery.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>jQuery</span></Pill>,
-          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>MySQL</Pill>,
-          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>JavaScript</Pill>,
-          <Pill newWindow href={"https://octobercms.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>October CMS</span></Pill>
+          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Go</Pill>,
+          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>PostgreSQL</Pill>,
+          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>ElasticSearch</Pill>,
+          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Gitlab</Pill>,
         ]}
       />
       <Project
@@ -74,8 +71,8 @@ const Projects: React.FunctionComponent<Props> = props => {
         placeholder={<img src={tanamin_thumb} height={"100%"}></img>}
         desc={
           <p className={"proj-desc"}>
-            Tanamin was created as final project for Intelligent System subject. The goal of tanamin is to spread food across Indonesia
-            equally. Tanamin was a constraint satisfaction problem that was solved by local search algorithm.
+            Tanamin was created as final project for Intelligent System subject. The goal of tanamin is to equally plant crops across Indonesia
+            without having the same crops adjacent to each other. Tanamin was a constraint satisfaction problem that was solved by local search algorithm.
           </p>
         }
         techs={[
@@ -96,9 +93,8 @@ const Projects: React.FunctionComponent<Props> = props => {
         placeholder={<img src={lki_thumb} height={"100%"}></img>}
         desc={
           <p className={"proj-desc"}>
-            This website is a mockup design and a presentation material for a client. It doesn't have any backend logic yet, but it will be coming
-            pretty soon in February 2018 under different domain (without using Heroku). <b>It was created by a team called Digital Room (Digiroom). 
-            Please contact me if you need help building a website for your business.</b>
+            This website is a mockup design and a presentation material for a client. This website is basically a company profile website
+            having the company profile itself, and the products and services it provides.
           </p>
         }
         techs={[
@@ -111,7 +107,7 @@ const Projects: React.FunctionComponent<Props> = props => {
         ]}
       />
       <Project
-        title={<h4><a title={"Portfolio V2"} rel={"noopener noreferrer"} href={"https://fariqodri.com/"} target={"_blank"}>Personal Portfolio V2</a></h4>}
+        title={<h4>Personal Portfolio V2</h4>}
         img={<img className={"mockup"} src={port}/>}
         placeholder={<img src={port_thumb} height={"100%"}></img>}
         desc={
