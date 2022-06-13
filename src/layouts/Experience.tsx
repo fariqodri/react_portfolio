@@ -4,6 +4,7 @@ import { Timeline, TimelineEvent, TimelineBlip } from 'react-event-timeline'
 import kata from "../static/images/kata_logo.png"
 import pinhome from "../static/images/pinhome_logo.png"
 import telkomsel from "../static/images/telkomsel_logo.jpeg"
+import dibimbing from "../static/images/dibimbing_logo.png"
 import LazyLoad from "../components/LazyLoad"
 
 const Experience: React.FunctionComponent<Props> = props => (
@@ -87,6 +88,28 @@ const Experience: React.FunctionComponent<Props> = props => (
             </li>
             <li>
               Coordinating with an international team consisting of Indians, Malaysians, and Indonesians on the daily basis
+            </li>
+          </ul>
+        </p>
+      </TimelineEvent>
+      <TimelineEvent
+        title = {<div style={{fontSize: "1.05rem"}}><a rel={"noopener noreferrer"} target={"_blank"} href={"https://dibimbing.id/"}>Dibimbing</a></div>}
+        subtitle = {<p>April 2022 - Present</p>}
+        bubbleStyle={{borderColor: "transparent"}}
+        icon={<LazyLoad><img style={{borderRadius: "50%"}} src={dibimbing} width={"100%"} height={"100%"}/></LazyLoad>}
+      >
+        <p>
+          Dibimbing is an IT bootcamp startup that focuses on preparing its students to work in Indonesian best tech startup. 
+          It offers a wide range of courses from web development to data science. My responsibility as a <b>freelance mentor</b> in Dibimbing is:
+        </p>
+        <p>
+          <ul>
+            <li>
+              Teach in various Dibimbing web development courses. So far, I have taught in 3 different courses which in total consist of 9 meetings. 
+              The courses I have taught are <b>database, programming fundamental, and intro to web development with JavaScript</b>
+            </li>
+            <li>
+              Give take-home assignments to the students and evaluate them.
             </li>
           </ul>
         </p>
