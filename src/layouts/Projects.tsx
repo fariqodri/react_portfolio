@@ -5,6 +5,7 @@ import tanamin from "../static/images/macbooktanamin.png"
 import lki from "../static/images/macbooklki.png"
 import port from "../static/images/macbookport2.png"
 import riku from "../static/images/riku.png"
+import waroenk from "../static/images/waroenk.png"
 
 //Thumbnails
 import fqa_thumb from "../static/images/macbookfqa_thumb.png"
@@ -63,6 +64,28 @@ const Projects: React.FunctionComponent<Props> = props => {
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>PostgreSQL</Pill>,
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>ElasticSearch</Pill>,
           <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Gitlab</Pill>,
+        ]}
+      />
+      <Project
+        title={<h4><a title={"Waroenk"} rel={"noopener noreferrer"} href={"https://github.com/fariqodri/waroenk-backend"} target={"_blank"}>Waroenk</a></h4>}
+        img={<img src={waroenk}/>}
+        placeholder={<img src={waroenk} height={"100%"}></img>}
+        desc={
+          <p className={"proj-desc"}>
+            Waroenk is a marketplace application where one of its main objectives is to nurture the development of Indonesia's MSME in the e-commerce sector. 
+            As such, apart from normal marketplace features like products discovery, buying and selling, communications between sellers and buyers, Waroenk also has 
+            feature where sellers can book a seat in several training events. In this project, I was involved in the development of the backend system and the deployment 
+            of the system to the cloud. I learned a lot about NestJS, Kubernetes, Docker, and AWS, since those are the main stack in this project. Unfortunately, this project 
+            was discontinued due to the business issues from the client.
+          </p>
+        }
+        techs={[
+          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>TypeScript</Pill>,
+          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>NestJS</Pill>,
+          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Redis</Pill>,
+          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>PostgreSQL</Pill>,
+          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Kubernetes</Pill>,
+          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>AWS</Pill>,
         ]}
       />
       <Project
