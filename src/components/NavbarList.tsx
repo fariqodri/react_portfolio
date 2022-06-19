@@ -25,6 +25,9 @@ const NavList: React.FunctionComponent<Props & NavListProps> = (props) => {
         <NavLink onClick={onClick} smooth style={{textDecoration: "none"}} href={"#skills"}>Skills</NavLink>
       </div>
       <div style={{...itemStyle}}>
+        <NavLink onClick={onClick} smooth style={{textDecoration: "none"}} href={"#blog"}>Blog</NavLink>
+      </div>
+      <div style={{...itemStyle}}>
         <NavLink onClick={onClick} smooth style={{textDecoration: "none"}} href={"#projects"}>Projects</NavLink>
       </div>
       <div style={{...itemStyle}}>

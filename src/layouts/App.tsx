@@ -10,6 +10,7 @@ import Drawer from "../components/Drawer"
 import { Skills } from './Skills';
 import Projects from "./Projects"
 import About from "./About"
+import Blog from './Blog';
 import Footer from '../components/Footer';
 
 
@@ -32,6 +33,7 @@ class App extends Component {
       <Education style={{paddingTop:"10px"}} id={"edu"} className={"edu section"}/>
       <Experience style={{paddingTop:"10px"}} id={"exp"} className={"exp section"}/>
       <Skills id={"skills"} className={"skills section"} style={{paddingTop:"10px"}}/>
+      <Blog id="blog" className="blog section" />
       <Projects id={"projects"} className={"projects section"} style={{paddingLeft: "5vw", paddingTop:"10px"}}/>
       <About id={"about"} className={"about section"} style={{paddingLeft: "5vw", paddingTop:"10px"}}/>
     </div>

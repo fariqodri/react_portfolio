@@ -120,7 +120,7 @@ p {
     padding: 0 5px 0 5px;
   }
 
-  .projects, .about {
+  .projects, .about, .blog {
     padding-right: 5vw;
   }
 
@@ -184,7 +184,11 @@ p {
   .edu, .exp {
     padding-right: 5vw;
   }
-
+  
+  .blog-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 
 
@@ -244,5 +248,9 @@ p {
 
   .pill-button {
     font-size: 1em
+  }
+
+  .blog-container {
+    gap: 20px;
   }
 }

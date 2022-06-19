@@ -22,7 +22,7 @@ const Projects: React.FunctionComponent<Props> = props => {
   const {className, id, style} = props
   return (
     <div className={className} id={id} style={{...style}}>
-      <h3>My Projects Gallery</h3>
+      <h3>My Projects</h3>
       <Project
         id={"first"}
         title={<h4><a title={"Portfolio V1"} rel={"noopener noreferrer"} href={"http://fariqodri.herokuapp.com"} target={"_blank"}>Personal Portfolio V1</a></h4>}

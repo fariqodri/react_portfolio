@@ -43,12 +43,10 @@ const Intro: React.FunctionComponent<PropsFromDispatch & Props> = props => (
       </div>
       <div className={"list-container"}>
         <List style={{float: "right"}} className={"conList"}>
-          <a title={"Facebook"} rel={"noopener noreferrer"} target={"_blank"} href={"https://www.facebook.com/fari.vanpersie.7?ref=bookmarks"}><i className="fab fa-facebook"></i></a>
+          <a title={"Medium"} rel={"noopener noreferrer"} target={"_blank"} href={"https://medium.com/holy-dev"}><i className="fab fa-medium"></i></a>
           <a title={"LinkedIn"}  rel={"noopener noreferrer"} target={"_blank"} href={"https://linkedin.com/in/fariqodri"}><i className="fab fa-linkedin"></i></a>
           <a title={"Gitlab"}  rel={"noopener noreferrer"} target={"_blank"} href={"https://gitlab.com/fariqodri"}><i className="fab fa-gitlab"></i></a>
           <a title='Github' rel='noopener noreferrer' target='_blank' href='https://github.com/fariqodri'><i className='fab fa-github'></i></a>
-          <a title={"Instagram"}  rel={"noopener noreferrer"} target={"_blank"} href={"https://www.instagram.com/fariqodri/"}><i className="fab fa-instagram"></i></a>
-          <a title={"Twitter"}  rel={"noopener noreferrer"} target={"_blank"} href={"https://twitter.com/fari_qodri"}><i className="fab fa-twitter"></i></a>
         </List>
       </div>
     </Description>
