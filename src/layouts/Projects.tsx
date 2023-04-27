@@ -6,12 +6,14 @@ import lki from "../static/images/macbooklki.png"
 import port from "../static/images/macbookport2.png"
 import riku from "../static/images/riku.png"
 import waroenk from "../static/images/waroenk.png"
+import centhroid from "../static/images/centhroid.png"
 
 //Thumbnails
 import fqa_thumb from "../static/images/macbookfqa_thumb.png"
 import tanamin_thumb from "../static/images/macbooktanamin_thumb.png"
 import lki_thumb from "../static/images/macbooklki_thumb.png"
 import port_thumb from "../static/images/macbookport2_thumb.png"
+import centhroid_thumb from "../static/images/centhroid_thumb.png"
 
 import Project from "../components/Project"
 import { Props } from "./App";
@@ -25,6 +27,25 @@ const Projects: React.FunctionComponent<Props> = props => {
       <h3>My Projects</h3>
       <Project
         id={"first"}
+        title={<h4><a title={"Centhroid"} rel={"noopener noreferrer"} href={"https://centhroid.com"} target={"_blank"}>Centhroid</a></h4>}
+        img={<img src={centhroid}/>}
+        placeholder={<img src={centhroid_thumb} height={"100%"}></img>}
+        style={{marginTop: '0'}}
+        desc={
+          <p className={"proj-desc"}>
+            Centhroid is a simple and user-friendly website that finds the midpoint of any group of places. All you need to do is enter the addresses of your friends and yourself, and the website will show you the best spot for everyone on a map. 
+            Centhroid is not only useful for social gatherings, but also for business meetings, travel planning, event organizing, and more. It can save you time, money, and hassle by finding the most fair and convenient place for everyone involved.
+          </p>
+        }
+        techs={[
+          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Tailwind CSS</Pill>,
+          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>HTML</Pill>,
+          <Pill newWindow href={"https://www.djangoproject.com/"} hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}><span className={"link"}>Django</span></Pill>,
+          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Google Cloud Run</Pill>,
+          <Pill hoverColor={"#0080FF"} style={{backgroundColor:"transparent", border:"1px solid #0080FF"}}>Google Maps API</Pill>,
+        ]}
+      />
+      <Project
         title={<h4><a title={"Portfolio V1"} rel={"noopener noreferrer"} href={"http://fariqodri.herokuapp.com"} target={"_blank"}>Personal Portfolio V1</a></h4>}
         img={<img className={"mockup"} src={fqa}/>}
         placeholder={<img src={fqa_thumb} height={"100%"}></img>}

@@ -8,13 +8,14 @@ type ProjectProps = {
   techs?: React.ReactNode | React.ReactNode[]
   title?: React.ReactNode
   placeholder?:React.ReactNode
+  style?: any
 }
 
 const Project: React.FunctionComponent<Props & ProjectProps> = props => {
   let {title, img, desc, techs, id} = props
   
   return (
-    <div id={id} style={{width: "100%", marginTop: "50px"}}>
+    <div id={id} style={{width: "100%", marginTop: "50px", ...props.style}}>
       <div style={{width: "100%", textAlign:"center"}}>
         {title}
       </div>
